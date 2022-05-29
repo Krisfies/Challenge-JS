@@ -1,21 +1,27 @@
-"use strict";
+// Création des variables récupérant le contenu du fichier html
 let navLinks = document.querySelectorAll(".carousel .nav-link");
 let slides = document.querySelectorAll(".carousel .slides img");
 let slides2 = document.querySelectorAll(".carousel .slides2 video");
 let overlays = document.querySelectorAll(".carousel .bar");
 let maxZIndex = navLinks.length;
 let easeInOutQuart = "cubic-bezier(0.77, 0, 0.175, 1)";
+
+// Création des tableaux incluant les images, les vidéos et leurs liens
 slides[0].classList.add("active");
 slides2[0].classList.add("active");
 navLinks[0].classList.add("active");
+
+// Début de la fonction carousel
 navLinks.forEach((navLink, activeIndex) => {
     overlays[activeIndex].style.zIndex = `${navLinks.length -
         activeIndex}`;
     navLink.addEventListener("click", () => {
-        // nav-link
+
+        // Passage aux différentes images et vidéo grâce aux balises liens
         navLinks.forEach(navLink => navLink.classList.remove("active"));
         navLink.classList.add("active");
-        // slide
+
+        // Animation du changement d'image et vidéo
         let currentSlide = document.querySelector(".carousel .slides img.active");
         let currentSlide2 = document.querySelector(".carousel .slides2 video.active");
         let slideFadeOut = currentSlide.animate([
@@ -34,6 +40,8 @@ navLinks.forEach((navLink, activeIndex) => {
             easing: "ease-in",
             fill: "forwards"
         });
+
+        // Activation de l'image suivante
         slideFadeOut.onfinish = () => {
             slides.forEach(slide => slide.classList.remove("active"));
             let activeSlide = slides[activeIndex];
@@ -49,6 +57,8 @@ navLinks.forEach((navLink, activeIndex) => {
                 }
             ], { duration: 600, easing: "ease-out", fill: "forwards" });
         };
+
+        // Activation de la vidéo suivante
         slideFadeOut2.onfinish = () => {
             slides2.forEach(slide2 => slide2.classList.remove("active"));
             let activeSlide2 = slides2[activeIndex];
@@ -64,7 +74,7 @@ navLinks.forEach((navLink, activeIndex) => {
                 }
             ], { duration: 600, easing: "ease-out", fill: "forwards" });
         };
-        // overlay
+        // Augmentation de l'index et animation
         maxZIndex += 1;
         let activeOverlay = overlays[activeIndex];
         activeOverlay.style.zIndex = `${maxZIndex}`;
