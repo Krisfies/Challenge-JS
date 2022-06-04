@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="./style.css" rel="stylesheet">
+    <script defer src="page4.js"> </script>
+	<title>Quiz 4</title>
+	</head>
+	<body>
+		<div class="fond">
+			<p>Quel est le nom du premier homme à être allé dans l'espace ?</p>
+			<form>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Buzz Aldrin" name="prop">
+					<label for="Buzz Aldrin">Buzz Aldrin</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Michael Collins" name="prop">
+					<label for="Michael Collins">Michael Collins</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Youri Gagarine" name="prop">
+					<label for="Youri Gagarine">Youri Gagarine</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Bruce McCandless" name="prop">
+					<label for="Bruce McCandless">Bruce McCandless</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Neil Armstrong" name="prop">
+					<label for="Neil Armstrong">Neil Armstrong</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Valentina Terechkova" name="prop">
+					<label for="Valentina Terechkova">Valentina Terechkova</label>
+				</div>
+				<br>
+			</form>
+			<form>
+				<div>
+					<input type="button" value="CORRECTION" onClick="correction()">
+				</div>
+				<br>
+				<div>
+					<input type="button" value="EFFACER" onClick="efface()">
+				</div>
+				<p>Votre score : <input type="text" id="total" readonly="readonly" size="1"></p>
+				<a id="suivant" href="page5.html"><input type="button" value="Suivant"></a>
+			</form>	
+		</div>
+	</body>
+</html>

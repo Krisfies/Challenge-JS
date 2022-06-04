@@ -1,3 +1,21 @@
-#wholebackground {
+body {
     background-image: url("./images/espace.png");
+    background-size: cover;
+}
+
+.fond{
+    background-color: #E5E8E8;
+    opacity: 88%;
+    margin-right:35%;
+    margin-left:35%;
+    margin-top: 10%;
+    padding-left:3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 15px;
+}
+
+#suivant {
+    text-decoration: none;
+    display:none;
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="./style.css" rel="stylesheet">
+    <script defer src="index.js"> </script>
+	<title>Quiz 1</title>
+	</head>
+	<body>
+		<div class="fond">
+			<p>Quelles planètes font partis du système solaire ?</p>
+			<form>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="checkbox" value="Soleil" name="prop">
+					<label for="Soleil">Soleil</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="checkbox" value="Terre" name="prop">
+					<label for="Terre">Terre</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="checkbox" value="Pluton" name="prop">
+					<label for="Pluton">Pluton</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="checkbox" value="Andromède" name="prop">
+					<label for="Andromède">Andromède</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="checkbox" value="Mars" name="prop">
+					<label for="Mars">Mars</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="checkbox" value="Uranus" name="prop">
+					<label for="Uranus">Uranus</label>
+				</div>
+				<br>
+			</form>
+			<form>
+				<div>
+					<input type="button" value="CORRECTION" onClick="correction()">
+				</div>
+				<br>
+				<div>
+					<input type="button" value="EFFACER" onClick="efface()">
+				</div>
+				<p>Votre score : <input type="text" id="total" readonly="readonly" size="1"></p>
+				<a id="suivant" href="page2.html"><input type="button" value="Suivant"></a>
+			</form>	
+		</div>
+	</body>
+</html>

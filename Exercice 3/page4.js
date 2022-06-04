@@ -1,39 +1,28 @@
 let nbquestions = 6;		//le nombre de questions
-let reponse = new Array(6);	//le nombre de réponses
-reponse[0] = "Faux";
-reponse[1] = "Terre";//les réponses (en partant de 0)
-reponse[2] = "Faux";
-reponse[3] = "Faux";
-reponse[4] = "Mars";
-reponse[5] = "Uranus";
+let reponse = "Youri Gagarine";	//le nombre de réponses
 
 function correction() {
-let solution = 0;
-for (let i=0; i<=nbquestions; i++) {
-    if (reponse[i] != "Faux") {
-        solution++
-    }
-}
-let score = 0;
+    let score = 0;
     for (let i=0; i<nbquestions; i++) {
         let proposition = document.getElementsByName("prop");
         input_prop = proposition[i];
-        if (input_prop.value == reponse[i]) {
+        if (input_prop.checked && input_prop.value == reponse) {
             let image_vrai = document.getElementsByName("vrai");
             img_vrai = image_vrai[i];
             img_vrai.style.display="inline";//affiche l'image "vrai"
-            if (input_prop.checked) {
             score++;	//augmente le score d'1 point
-            }
         }
-        else {
+        else if (input_prop.value == reponse && !input_prop.checked) {
+            let image_vrai = document.getElementsByName("vrai");
+            img_vrai = image_vrai[i];
+            img_vrai.style.display="inline";//affiche l'image "vrai"
+        } else {
             let images_faux = document.getElementsByName("faux");
             img_faux = images_faux[i]
             img_faux.style.display="inline";//affiche l'image "faux"
         }
-    }
-    solution--
-    document.getElementById("total").value=score+"/"+solution;//affiche le score dans le boutton "total"
+    } 
+    document.getElementById("total").value=score+"/1";//affiche le score dans le boutton "total"
     document.getElementById("suivant").style.display="inline"
     for (let i=0; i<nbquestions; i++) {
         let proposition = document.getElementsByName("prop");

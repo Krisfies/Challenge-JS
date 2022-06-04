@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="./style.css" rel="stylesheet">
+    <script defer src="page5.js"> </script>
+	<title>Quiz 5</title>
+	</head>
+	<body>
+		<div class="fond">
+			<p>Quel est le nom du premier être vivant à avoir voyagé dans l'espace ?</p>
+			<form>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Pollux" name="prop">
+					<label for="Pollux">Pollux</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Hector" name="prop">
+					<label for="Hector">Hector</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Enos" name="prop">
+					<label for="Enos">Enos</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Belka" name="prop">
+					<label for="Belka">Belka</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Miss Baker" name="prop">
+					<label for="Miss Baker">Miss Baker</label>
+				</div>
+				<div>
+					<img name="vrai" src="images/vrai.jpg" width="20" height="20" id="image1_1" style="display:none"><img name="faux" src="images/faux.jpg" width="20" height="20" id="image1_2" style="display:none">
+					<input type="radio" value="Laïka" name="prop">
+					<label for="Laïka">Laïka</label>
+				</div>
+				<br>
+			</form>
+			<form>
+				<div>
+					<input type="button" value="CORRECTION" onClick="correction()">
+				</div>
+				<br>
+				<div>
+					<input type="button" value="EFFACER" onClick="efface()">
+				</div>
+				<p>Votre score : <input type="text" id="total" readonly="readonly" size="1"></p>
+			</form>	
+		</div>
+	</body>
+</html>
