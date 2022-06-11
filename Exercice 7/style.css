@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(121, 9, 9) 35%, rgb(255, 0, 128) 100%);
+}
+
+button {
+    margin-top: 40px;
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+div {
+   background-color: yellow;
+   width: 100px;
+   height: 100px;
+   border: 2px solid black;
+}
+
+button:hover {
+    background-color: rgb(161, 12, 12);
+}
+
+div:hover {
+    background-color: red;
+}
+
+.flex {
+    justify-content: space-around;
+    display: flex;
+}
+
+.line {
+    display: flex;
+}
+
+.menu {
+    background-color: aqua;
+}
+
+.rules {
+    margin-top: 0;
+    font-size: 250%;
+    color: blue;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 520px;
+    background: rgb(224, 148, 148);
+}
+
+.boxmoyen {
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 600px;
+    height: 623px;
+    background: rgb(224, 148, 148);
+}
+
+.boxdifficile{
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+    height: 832px;
+    background: rgb(224, 148, 148);
+}

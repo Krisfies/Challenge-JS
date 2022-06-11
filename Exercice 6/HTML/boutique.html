@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/style.css" rel="stylesheet">
+    <link href="../CSS/boutique.css" rel="stylesheet">
+    <script defer src="../main.js"> </script>
+    <link rel="icon" href="../Images/icone.png" />
+    <title>Sneakers Adict</title>
+</head>
+<body>
+        <div class="topnav">
+          <a class="active" href="accueil.html">ACCUEIL</a>
+          <a href="#boutique">BOUTIQUE</a>
+          <a href="panier.html">PANIER</a>
+        </div>
+        <div class="barre"></div>
+        <br>
+        <div class="title">Nos Sneakers</div>
+        <br>
+        <br>
+        <div class="categorie">
+          <div class="all">Toutes</div>
+          <br>
+          <div class="flashy">Flashy</div>
+          <br>
+          <div class="sobre">Sobre</div>
+          <br>
+          <div class="basse">Basse</div>
+        </div>
+        <div class="all_sneakers">
+          <div class="sneakers_box">
+            <img onmouseover="back(1)" id="Img1" src="../Images/article_1_front.jpg">
+            <p>Air Jordan 1 Retro High University Blue</p>
+            <div class="flex"></div>
+            <p>545 €</p>
+            <p class="Jordan_Price"></p>
+            <p class="Jordan_Quantity"></p>
+            <div class="box">
+              <button class="quantity" onclick="add('Jordan')">Ajouter au panier</button>
+            </div>
+          </div>
+          <div class="sneakers_box">
+            <img onmouseover="back(2)" id="Img2" src="../Images/article_2_front.jpg">
+            <p>Air Force 1 Low White Supreme</p>
+            <div class="flex"></div>
+            <p>250 €</p>
+            <p class="Supreme_Price"></p>
+            <p class="Supreme_Quantity"></p>
+            <div class="box">
+              <button class="quantity" onclick="add('Supreme')">Ajouter au panier</button>
+            </div>
+          </div>
+          <div class="sneakers_box">
+            <img onmouseover="back(3)" id="Img3" src="../Images/article_3_front.jpg">
+            <p>Air Force 1 Low Metallic Chrome</p>
+            <div class="flex">
+              <p class="strike">250 €</p>
+              &nbsp;&nbsp;
+              <p class="red">200 €</p>
+            </div>
+            <p class="Metallic_Price"></p>
+            <p class="Metallic_Quantity"></p>
+            <div class="box">
+              <button class="quantity" onclick="add('Metallic')">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+        <footer>
+            <p>Company © Sneakers Addict. All rights reserved.</p>
+        </footer>
+</body>
+</html>

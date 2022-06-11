@@ -1,0 +1,78 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+p {
+  font-size: 200%;
+}
+
+
+img {
+    margin-left: 15%;
+    width : 200px;
+    height : 200px;
+    background-color: rgb(202, 202, 202);
+    border: 5px solid black;
+}
+
+.all {
+  display: flex;
+}
+
+.all_paniers {
+  margin-left: 10%;
+}
+
+.panier {
+  display: flex;
+  background-color: rgb(155, 151, 151);
+  width: 600px;
+  border-radius: 10px;
+}
+
+.total {
+  margin-left: 30%;
+  margin-top: -4.5%;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  height: 300px;
+}
+
+.paypal {
+  border-radius: 60px;
+  color: white;
+  background-color: black;
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.paypal:hover {
+  background-color: rgb(75, 72, 72);
+  color: white;
+  transform: perspective(1px) translateZ(0);
+}
+
+.space {
+  height: 50px;
+}
+
+.text {
+  display: block;
+  margin-left: 2%;
+}
+
+
+.title {
+  margin-top: 20px;
+  font-size: 250%;
+  font-weight: bold;
+  margin-left: 15%;
+}

@@ -1,0 +1,69 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.all_sneakers {
+    display: flex;
+    margin-left: 8%;
+    margin-top: -5.5%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.red {
+    color: red;
+}
+
+.flex {
+    display: flex;
+}
+
+.title {
+    font-size: 250%;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.quantity {
+    border: 2px solid black;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    padding: 20px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sneakers_box {
+    border-radius: 10px;
+    background-color: rgb(202, 202, 202);
+    margin-left: 8%;
+    padding : 1em;
+    border: solid 4px rgb(202, 202, 202)k;
+    box-sizing: border-box;
+}
+
+img {
+    width : 500px;
+    height : 500px;
+}
+
+.categorie {
+    font-weight: bold;
+    margin-left: 3%
+}
